@@ -59,7 +59,7 @@ public class CurrencyConverter {
 
         //Logic
         double result = 0;
-        if (fromCurrencyInCurrencyFormat.cost > toCurrencyInCurrencyFormat.cost) {
+        if (fromCurrencyInCurrencyFormat.cost < toCurrencyInCurrencyFormat.cost) {
             double amountInAzn = amount / fromCurrencyInCurrencyFormat.cost;
             result = amountInAzn * toCurrencyInCurrencyFormat.cost;
             System.out.println(result);
